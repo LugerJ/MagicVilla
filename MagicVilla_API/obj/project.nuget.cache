@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+2Oihd8eaBCFOIzBYdy7+kBsJCz+RjVSBuVUY4H4/J94hhLhbtIJi9NCtyTnKCb8pZ7wpDoyg8cGFTWfPmUSYA==",
+  "dgSpecHash": "Uu9hbvXSBypBGfGEwlvqs8C/weJzGcfHmKoo8AjwZzvqzwVo0v3gHjLB/32nasTXBid9P5vc0RK25qIR2yr+Gg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ComiteEjecutivo2327\\source\\repos\\Proyecto\\MagicVilla\\MagicVilla_API\\MagicVilla_API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -75,7 +76,11 @@
     "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\ComiteEjecutivo2327\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.19\\microsoft.netcore.app.host.win-x64.7.0.19.nupkg.sha512"
   ],
   "logs": []
 }

@@ -51,7 +51,7 @@ namespace MagicVilla_API.Controllers
             }
             return _response;
         }
-        [HttpGet("id:int", Name = "GetVilla")]
+        [HttpGet("{id:int}", Name = "GetVilla")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -68,8 +68,9 @@ namespace MagicVilla_API.Controllers
                     return BadRequest(_response);
                 }
                 //var villa = VillaStore.villaList.FirstOrDefault(v => v.Id == id);
+                
                 var villa = await _villaRepo.Obtener(v => v.Id == id);
-
+                
 
                 if (villa == null)
                 {
@@ -104,7 +105,7 @@ namespace MagicVilla_API.Controllers
                 //if (VillaStore.villaList.FirstOrDefault(v => v.Nombre.ToLower() == villaDto.Nombre.ToLower()) != null)
                 if (await _villaRepo.Obtener(v => v.Nombre.ToLower() == createDto.Nombre.ToLower()) != null)
                 {
-                    ModelState.AddModelError("Nombre Existe", "La vista con ese nombre ya existe!");
+                    ModelState.AddModelError("ErrorMessages", "La vista con ese nombre ya existe!");
                     return BadRequest(ModelState);
                 }
 
@@ -205,7 +206,7 @@ namespace MagicVilla_API.Controllers
             //villa.Ocupantes= villaDto.Ocupantes;
             //villa.MetrosCuadrados = villaDto.MetrosCuadrados;
 
-            if (await _villaRepo.Obtener(V=>V.Id==updateDto.Id)==null )
+            if (await _villaRepo.Obtener(V=>V.Id==updateDto.Id,false)==null)
             {
                 _response.IsExitoso = false;
                 _response.statusCode = HttpStatusCode.BadRequest;
@@ -231,6 +232,7 @@ namespace MagicVilla_API.Controllers
 
            /* _db.Villas.Update(modelo);
             await _db.SaveChangesAsync();*/
+           
            await _villaRepo.Actualizar(modelo);
             _response.statusCode=HttpStatusCode.NoContent;
 

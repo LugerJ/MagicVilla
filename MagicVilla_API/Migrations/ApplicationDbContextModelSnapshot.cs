@@ -46,6 +46,31 @@ namespace MagicVilla_API.Migrations
                     b.ToTable("NumeroVillas");
                 });
 
+            modelBuilder.Entity("MagicVilla_API.Modelos.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombres")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Rol")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Usuarios");
+                });
+
             modelBuilder.Entity("MagicVilla_API.Modelos.Villa", b =>
                 {
                     b.Property<int>("Id")
@@ -92,8 +117,8 @@ namespace MagicVilla_API.Migrations
                             Id = 1,
                             Amenidad = "Nadar",
                             Detalle = "Lago Hermoso",
-                            FechaActualizacion = new DateTime(2024, 6, 7, 12, 51, 3, 138, DateTimeKind.Local).AddTicks(6867),
-                            FechaCreacion = new DateTime(2024, 6, 7, 12, 51, 3, 138, DateTimeKind.Local).AddTicks(6853),
+                            FechaActualizacion = new DateTime(2024, 6, 24, 14, 21, 15, 492, DateTimeKind.Local).AddTicks(5325),
+                            FechaCreacion = new DateTime(2024, 6, 24, 14, 21, 15, 492, DateTimeKind.Local).AddTicks(5313),
                             ImageUrl = "",
                             MetrosCuadrados = 5000,
                             Nombre = "Villa Zirahuen",
@@ -105,8 +130,8 @@ namespace MagicVilla_API.Migrations
                             Id = 2,
                             Amenidad = "Nadar contracorriente",
                             Detalle = "Rio Hermoso",
-                            FechaActualizacion = new DateTime(2024, 6, 7, 12, 51, 3, 138, DateTimeKind.Local).AddTicks(6886),
-                            FechaCreacion = new DateTime(2024, 6, 7, 12, 51, 3, 138, DateTimeKind.Local).AddTicks(6885),
+                            FechaActualizacion = new DateTime(2024, 6, 24, 14, 21, 15, 492, DateTimeKind.Local).AddTicks(5329),
+                            FechaCreacion = new DateTime(2024, 6, 24, 14, 21, 15, 492, DateTimeKind.Local).AddTicks(5328),
                             ImageUrl = "",
                             MetrosCuadrados = 1000,
                             Nombre = "Villa Tarejero",
